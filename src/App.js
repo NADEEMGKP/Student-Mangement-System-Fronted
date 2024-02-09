@@ -16,7 +16,9 @@ function App() {
       {/* <AddStudentFrom/> */}
 
       <BrowserRouter>
-      <Link to="/add">ADD STUDENT</Link>
+      <Link to="/">HOME</Link> <br/>
+      <Link to="/add">ADD STUDENT</Link> <br/>
+      <Link to="/students">VIEW STUDENT</Link>
       <Routes>
         <Route path="/add" element={<AddStudentFrom/>}></Route>
         <Route path="/students" element={<ReadStudentData/>}></Route>
