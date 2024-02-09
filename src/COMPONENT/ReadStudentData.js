@@ -6,7 +6,7 @@ import { Link, Outlet } from 'react-router-dom';
 function ReadStudentData() {
     const [completeReadData, setCompleteReadData] = React.useState([])
     React.useEffect(function () {
-        Axios.get("https://student-mangement-system-4wt8.onrender.com/read")
+        Axios.get("https://student-mangement-system-backend.onrender.com/read")
             .then(function (output) {
                 // console.log(output.data)
                 setCompleteReadData(output.data)

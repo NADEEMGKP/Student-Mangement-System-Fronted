@@ -11,7 +11,7 @@ function EditStudent() {
     const { id } = useParams()
 
     useEffect(function () {
-        Axios.get(`http://localhost:9000/read/data/${id}`)
+        Axios.get(`https://student-mangement-system-backend.onrender.com/read/data/${id}`)
             .then(function (response) {
                 const data = response.data[0]; // Assuming there's only one item
                 if (data) {

@@ -27,7 +27,7 @@ export const AddStudentFrom = () => {
       event.preventDefault();
       // console.log(formData);
      
-      const result = await Axios.post("https://student-mangement-system-4wt8.onrender.com/collect", formData)
+      const result = await Axios.post("https://student-mangement-system-backend.onrender.com/collect", formData)
       // console.log(result.data)
       setMessage(result.data)
       

@@ -7,7 +7,7 @@ function ViewStudent() {
   const { id } = useParams();
 
   useEffect(() => {
-    Axios.get(`https://student-mangement-system-4wt8.onrender.com/read/data/${id}`)
+    Axios.get(`https://student-mangement-system-backend.onrender.com/read/data/${id}`)
       .then((response) => {
         setViewStudent(response.data);
       })

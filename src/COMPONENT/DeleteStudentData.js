@@ -9,7 +9,7 @@ function DeleteStudentData()
     const [message, setMessage]  = React.useState("")
     const {id} = useParams()
     // console.log(id)
-    Axios.delete(`https://student-mangement-system-4wt8.onrender.com/delete/data/${id}`)
+    Axios.delete(`https://student-mangement-system-backend.onrender.com/delete/data/${id}`)
     .then(function(output)
     {
         // console.log(output.data)
